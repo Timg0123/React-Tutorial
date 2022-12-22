@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+// 300, 500, 700
+
+// Colors
+$white: #fafafa;
+$pink: #f1356d;
+
+
+/* blog-preview list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid $white;
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.blog-preview h2 {
+  font-size: 30px;
+  color: $pink;
+  margin-bottom: 8px;
+}
+
+* {
+  font-family: 'Quicksand', serif;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 140px;
+  height: 35px;
+  font-size: 18px;
+  background: $white;
+  border-radius: 7px;
+  border: 0px;
+  box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.05);
+  border: 1px solid rgb(245, 245, 245);
+  transition: border 200ms ease-in;
+  &:hover {
+    border: 1px solid $pink;
+  }
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid $white;
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17vw;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 0 30px 0 30px;
+}
+.navbar h1 {
+  font-weight: 700;
+  font-size: 50px;
+  color: $pink;
+}
+
+.links {
+  a {
+    margin: 50px 50px 50px 50px;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 200ms;
+    color: black;
+    &:hover {
+      color: $pink;
+    }
+  }
+}
+
+.home {
+  font-size: 30px;
+}
