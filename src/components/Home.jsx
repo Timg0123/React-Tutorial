@@ -9,7 +9,7 @@ const Home = () => {
         <div className="home">
             { error && <div>{ error }</div> }
             { isLoading && <div>Loading...</div> }
-            {blogs && <BlogList blogs={blogs} title="All Blogs" />}
+            {blogs && <BlogList blogs={blogs} title={Object.keys(blogs).length === 0 ? 'Currently no blogs' : 'All blogs'} />}
         </div>
     );
 }

@@ -6,22 +6,6 @@ $white: #fafafa;
 $pink: #f1356d;
 
 
-/* blog-preview list */
-.blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid $white;
-}
-
-.blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-}
-
-.blog-preview h2 {
-  font-size: 30px;
-  color: $pink;
-  margin-bottom: 8px;
-}
 
 * {
   font-family: 'Quicksand', serif;
@@ -31,6 +15,13 @@ $pink: #f1356d;
 body {
   display: flex;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  p {
+    color: black;
+  }
 }
 
 button {
@@ -48,23 +39,41 @@ button {
   }
 }
 
-.blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid $white;
-}
-
-
-
 .App {
   display: flex;
   flex-direction: column;
 }
 
+/* 404 NotFound */
+.content {
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
+  .not-found {
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      margin-bottom: 0px;
+      margin-left: 120px;
+      color: $pink;
+    }
+    a {
+      color: $white;
+      background: $pink;
+      padding: 15px 0 15px 15px;
+      border-radius: 15px;
+    }
+  }
+}
+
+/* navbar */
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 17vw;
   border-bottom: 1px solid rgb(231, 231, 231);
   padding: 0 30px 0 30px;
@@ -89,6 +98,91 @@ button {
   }
 }
 
+
+/* blog-preview list and home*/
 .home {
   font-size: 30px;
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid $white;
+}
+
+.blog-preview:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.blog-preview h2 {
+  font-size: 30px;
+  color: $pink;
+  margin-bottom: 8px;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 7px;
+}
+
+.create button {
+  background: $pink;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    box-shadow:  0px 0px 24px -10px $pink;
+  }
+}
+
+/* blog details page */
+.blog-details {
+  margin-left: 10vw;
+  margin-right: 20vw;
+}
+
+.blog-details h2 {
+  font-size: 30px;
+  color: $pink;
+  margin-bottom: 10px;
+}
+
+.blog-details p {
+  font-size: 20px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+  line-height: 25px;
+}
+
+.blog-details button {
+  background: $pink;
+  color: $white;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }

@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Create from './components/Create';
 import BlogDetails from './components/BlogDetails';
+import NotFound from './pages/NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default function App() {
@@ -19,6 +20,9 @@ export default function App() {
             </Route>
             <Route path="/blogs/:id">
               <BlogDetails />
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
         </div>
